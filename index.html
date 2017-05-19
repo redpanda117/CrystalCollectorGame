@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width,initial-scale=1">
+
+	<title>The CrystalsCollector</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/slate/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="title">
+				<h1>Crystal Game</h1>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class= "col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>How to play</strong></h3>
+					</div>
+					<div class="panel-body">
+						<p>The theme of this game is base on the anime No Game No Life.</p>
+						<p>In the begining of the game you will be given a random number.</p>
+						<p>There are four character from the show in the next panel. A random number will be assign to each character at the start of the game. When you click on anyone of them a number will be added to your score.</p>
+						<p>The number will be hidden from you until you click on the character. So try to keep track of their vaules.</p>
+						<p>To win the game you must match your score to the random number that was given to you at the start of the game.If you go over the random number value then you lose.</p>
+						<p>When the game restarts the hidden vaules of each of the characters will randomly change. In addition, you will be given a new random number to reach.</p>		
+					</div>
+				</div>
+			</div>
+		
+			<div class= "col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Given Number: </strong>
+						 <span id="randomNumber"></span>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<button type="button" class="btn btn-primary"><img src="assets/images/bt1.png" class="img-thumbnail"></button>
+						<button type="button" class="btn btn-primary"><img src="assets/images/bt2.png" class="img-thumbnail"></button>
+						<br>
+						<button type="button" class="btn btn-primary"><img src="assets/images/bt3.png" class="img-thumbnail"></button>
+						<button type="button" class="btn btn-primary"><img src="assets/images/bt4.png" class="img-thumbnail"></button>
+					</div>
+					<div class="panel-heading"> 
+						<h3 class="panel-title"><strong>Your Total Score: </strong>
+						 <span id="totalVaule"></span>
+						</h3>
+					</div>
+				</div>	
+			</div>
+
+			<div class="col-md-3">
+        		<div class="panel panel-default">
+          			<div class="panel-heading">
+            			<h3 class= panel-title>Scoreboard:</h3>
+            		</div>
+            		<div class="panel-body">
+              			<p>Wins:  <span id="win-counter">0</span></p>
+            			<p>Loses:  <span id="loss-counter">0</span></p>
+            		</div>
+          		</div>
+        	</div>
+		</div>
+	</div>
+
+	<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="panel panel-default">
+          	<div class="panel-heading">
+            Copyright &copy 2017 Bich (Tina) Nguyen
+            </div>
+          </div>
+          </div>
+        </div> 
+    </div>
+  </footer>
+
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>
