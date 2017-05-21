@@ -8,17 +8,20 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/slate/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Sirin+Stencil" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 </head>
 <body>
+
+<!-- Title or heading of the web page-->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="rounded"><span id="title">Crystals Collector Game</span></h1>
 			</div>
 		</div>
-		
+
+<!--Panel that furthest to the right giving content about rules  of the game and how to play-->		
 		<div class="row">
 			<div class= "col-md-5">
 				<div class="panel panel-default">
@@ -26,16 +29,17 @@
 						<h3 class="panel-title"><strong>How to play</strong></h3>
 					</div>
 					<div class="panel-body">
-						<p>The theme of this game is base on the anime No Game No Life.</p>
+						<p>The theme or images of this game is base on the anime No Game No Life.</p>
 						<p>In the begining of the game you will be given a random number.</p>
 						<p>There are four character from the show in the next panel. A random number will be assign to each character at the start of the game. When you click on anyone of them a number will be added to your score.</p>
 						<p>The number will be hidden from you until you click on the character. So try to keep track of their vaules.</p>
 						<p>To win the game you must match your score to the random number that was given to you at the start of the game.If you go over the random number value then you lose.</p>
-						<p>When the game restarts the hidden vaules of each of the characters will all randomly change. In addition, you will be given a new random number to reach.</p>		
+						<p>When the game restarts the hidden vaules of each of the characters will all randomly change. In addition, you will be given a new random number to match.</p>		
 					</div>
 				</div>
 			</div>
 		
+<!--area where the given number that will be the goal to match-->		
 			<div class= "col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -43,21 +47,24 @@
 						 <span id="randomNumber"></span>
 						</h3>
 					</div>
+<!--this section is the foue button that will be use in the game that will have different random numbers-->
 					<div class="panel-body">
-						<button type="button" class="btn btn-primary"><img src="assets/images/bt1.png" class="img-thumbnail"></button>
-						<button type="button" class="btn btn-primary"><img src="assets/images/bt2.png" class="img-thumbnail"></button>
+						<button id = "bt1" type="button" class="btn btn-primary" ><img src="assets/images/bt1.png" alt= "a chibi picture of the No Game No Life character name Hatsuse Izuna" class="img-thumbnail"></button>
+						<button id="bt2"  type="button" class="btn btn-primary"><img src="assets/images/bt2.png" alt= "a chibi picture of the No Game No Life character name Stephanie Dole" class="img-thumbnail"></button>
 						<br>
-						<button type="button" class="btn btn-primary"><img src="assets/images/bt3.png" class="img-thumbnail"></button>
-						<button type="button" class="btn btn-primary"><img src="assets/images/bt4.png" class="img-thumbnail"></button>
+						<button id="bt3" type="button" class="btn btn-primary"><img src="assets/images/bt3.png" alt= "a chibi picture of the No Game No Life character name Sora" class="img-thumbnail"></button>
+						<button id="bt4" type="button" class="btn btn-primary" ><img src="assets/images/bt4.png" alt= "a chibi picture of the No Game No Life character name Shiro" class="img-thumbnail"></button>
 					</div>
+<!--This panel is area to keep track of your current added value-->		
 					<div class="panel-heading"> 
-						<h3 class="panel-title"><strong>Your Total Score : </strong>
+						<h3 class="panel-title"><strong>Your Total Score :</strong>
 						 <span id="totalVaule"></span>
 						</h3>
 					</div>
 				</div>	
 			</div>
 
+<!--This pannel will keep track of the players wins and loses-->
 			<div class="col-md-3">
         		<div class="panel panel-default">
           			<div class="panel-heading">
@@ -76,16 +83,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-          <div class="panel panel-default">
-          	<div class="panel-heading">
             Copyright &copy 2017 Bich (Tina) Nguyen
-            </div>
-          </div>
           </div>
         </div> 
     </div>
   </footer>
-
+  
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script src="assets/javascript/game.js"></script>
 </body>
 </html>
