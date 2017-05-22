@@ -14,7 +14,7 @@ h1{
 
 p{
 	color: #000000;
-	font-size: 17px;
+	font-size: 16px;
 }
 
 button{
@@ -28,7 +28,7 @@ button{
 }
 
 .panel{
-    margin-bottom: 10px;	
+    margin-bottom: 24px;	
     background-color: rgba(255,228,225,.75);
 }
 
