@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 //calling global variables
 //given number 
-var RandomnNumber = [];
+var RandomnNumber = Math.floor(Math.random()*101 + 19);
 //value of what the player has so far
 var totalValue = 0;
 //scoreboard
@@ -15,8 +15,8 @@ var bt3 = Math.floor(Math.random()*11 + 1);
 var bt4 = Math.floor(Math.random()*11 + 1);
 
 function Start(){
-//generating a random number to reach
-	var RandomnNumber = Math.floor(Math.random()*101 + 19);
+//gives a random number to reach 
+	RandomnNumber = Math.floor(Math.random()*101 + 19);
 //print random number in html
 	$("#randomNumber").html(RandomnNumber);
 //debuging (make sure the right number is appearing)
@@ -45,6 +45,8 @@ function Start(){
        $("#CurrentValue").html(totalValue);
 //To see if the right number is added correcetly and its new value is correctly added.
        console.log("New total " + totalValue);
+//To see if you win or lose
+       roundComplete();
       });
 
 //Second button    
@@ -52,14 +54,15 @@ function Start(){
     	totalValue = bt2 + totalValue;
     	$("#CurrentValue").html(totalValue);
     	console.log("New total " + totalValue);
+    	roundComplete();
       });
 
 //Third button
     $("#bt3").on("click", function() {
-    	
     	totalValue = bt3 + totalValue;
     	$("#CurrentValue").html(totalValue);
         console.log("New total " + totalValue);
+        roundComplete();
         
       });
 
@@ -68,13 +71,14 @@ function Start(){
     	totalValue = bt4 + totalValue;
     	$("#CurrentValue").html(totalValue);
         console.log("New total " + totalValue);
+        roundComplete();
         
       });
 
-//adding to the scoreboard to keep track of wins and lost(NOT WORKING)
+//adding to the scoreboard to keep track of wins and losts
 function roundComplete() {
 //condition to win
-  if (totalValue === RandomnNumber) {
+  if (totalValue == RandomnNumber) {
 //adding one to the win score   
     win++;
 //new score appear on html
@@ -85,7 +89,7 @@ function roundComplete() {
 //condition for lost
   else if ( RandomnNumber < totalValue) {
 //adding one to the lose score   
-    lose++;
+    lose++
 //new score appear in html
     $("#loss-counter").html(lose);
 //restart the game
