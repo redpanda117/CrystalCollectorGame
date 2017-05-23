@@ -1,3 +1,4 @@
+// JavaScript function that wraps everything
 $(document).ready(function() {
 
 //calling global variables
@@ -62,8 +63,7 @@ function Start(){
     	totalValue = bt3 + totalValue;
     	$("#CurrentValue").html(totalValue);
         console.log("New total " + totalValue);
-        roundComplete();
-        
+        roundComplete();        
       });
 
 //Fourth button
@@ -72,7 +72,6 @@ function Start(){
     	$("#CurrentValue").html(totalValue);
         console.log("New total " + totalValue);
         roundComplete();
-        
       });
 
 //adding to the scoreboard to keep track of wins and losts
@@ -102,13 +101,12 @@ function roundComplete() {
 //calling the function to start the game 
 Start();
       
-
 /*Song is from No Game No Life Original Soundtrack Vol.3 - 
 All of you is all of me*/
  var audioElement = document.createElement("audio");
- audioElement.setAttribute("src", "Assets/song/song.mp3");
+ audioElement.setAttribute("src", "assets/song/song.mp3");
 
-// Sttart Theme Song Button
+// Start Theme Song Button
     $(".theme-button").on("click", function() {
     audioElement.play();
       });
