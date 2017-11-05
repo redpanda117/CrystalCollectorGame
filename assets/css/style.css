@@ -56,42 +56,77 @@ footer{
 	color:#000000;
 }
 
-@media screen and (min-height: 981px){
+@media screen and (min-width: 1064px){
 	button{
 		width: 150px;
 		height: 150px;
 		margin:5px;
 	}
-  }   
+}
 
-@media screen and (max-height: 980px) and (min-height: 768px){
+@media screen and (min-width: 992px) and (max-width:1063px){
+	button{
+		width: 118px;
+		height: 120px;
+		margin: 5px;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 991px)and (min-width: 981px){
 	button{
 		width: 150px;
 		height: 150px;
 		margin:5px;
 	}
-  }   
-
-@media screen and (max-height: 767px) and (min-height: 640px){
-	button {
-		width: 137px;
-		height: 146px;
-		margin:5px;
+	#buttonNum{
+		width: 400px;
+		float: left;
+		margin-bottom: 42px;
+	}
+	#scoreboard{
+		width: 350px;
+		float: right;
 	}
   }
-
-@media screen and (max-height: 639px){
+@media screen and (max-width: 980px) and (min-width: 768px){
 	button {
 		width: 137px;
 		height: 146px;
 		margin:5px;
 	}
-} 
-
-@media screen and (max-height: 568px){
+	#buttonNum{
+		width: 400px;
+		float: left;
+		margin-bottom: 42px;
+	}
+	#scoreboard{
+		width: 350px;
+		float: right;
+	}
+	
+  }
+  @media screen and (max-width: 767px) and (min-width: 640px){
+		button {
+		width: 137px;
+		height: 146px;
+		margin:5px;
+	}
+	#buttonNum{
+		width: 360px;
+		float: left;
+		margin-bottom: 42px;
+	}
+	#scoreboard{
+		width: 270px;
+		float: right;
+	}
+  }
+  
+  @media screen and (max-width: 639px){
 	button {
 		width: 117px;
 		height: 126px;
 		margin: 5px;
 	}
-} 
+  }
