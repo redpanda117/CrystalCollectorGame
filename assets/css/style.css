@@ -17,12 +17,6 @@ p{
 	font-size: 16px;
 }
 
-button{
-	width: 150px;
-	height: 150px;
-	margin:5px;
-}
-
 .panel-default > .panel-heading {
 	background-image: linear-gradient(#484e55, #3A3F44 60%, #313539);
 	color: #ffffff;
@@ -61,3 +55,43 @@ button{
 footer{
 	color:#000000;
 }
+
+@media screen and (min-height: 981px){
+	button{
+		width: 150px;
+		height: 150px;
+		margin:5px;
+	}
+  }   
+
+@media screen and (max-height: 980px) and (min-height: 768px){
+	button{
+		width: 150px;
+		height: 150px;
+		margin:5px;
+	}
+  }   
+
+@media screen and (max-height: 767px) and (min-height: 640px){
+	button {
+		width: 137px;
+		height: 146px;
+		margin:5px;
+	}
+  }
+
+@media screen and (max-height: 639px){
+	button {
+		width: 137px;
+		height: 146px;
+		margin:5px;
+	}
+} 
+
+@media screen and (max-height: 568px){
+	button {
+		width: 117px;
+		height: 126px;
+		margin: 5px;
+	}
+} 
