@@ -36,7 +36,8 @@ p{
 
 .panel{
     margin-bottom: 24px;	
-    background-color: rgba(255,228,225,.75);
+	background-color: rgba(255,228,225,.75);
+	border: 0;
 }
 
 #title{
